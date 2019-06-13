@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 1. 适用于单行的元素 */
+.container1 {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #000;
+  line-height: 150px;
+  text-align: center;
+}
+
+.redbox {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #c00;
+}
+
+/* 2. 适用于行内块级元素 */
+.container2::after, .container2 .son {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container2::after {
+  content: '';
+  height: 100%;
+}
+
+.container2 {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+
+/* 3.元素高度不定 */
+.container3 {
+  display: table;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+
+.container3 .redbox3 {
+  display: table-cell;
+  vertical-align: middle;
+  background: blue;
+}
+
+/* 4. flex布局 */
+.container4 {
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* 5. Transform */
+.container5 {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+}
+
+.container5 .redbox {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* 6.元素高度固定 */
+.container6 {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+}
+
+.container6 .redbox {
+  position: absolute;
+  top: 50%;
+  height: 30px;
+  margin-top: -15px;
+}
+
+/* 7 */
+.container7 {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+}
+
+.container7 .redbox {
+  position: absolute;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}

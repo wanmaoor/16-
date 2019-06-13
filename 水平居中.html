@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>水平居中</title>
+  <link href="水平居中.css" rel="stylesheet">
+</head>
+
+<body>
+<a href="./垂直居中.html">垂直居中</a>
+<div class="container1">
+  <span>若是行内元素, 给其父元素设置 text-align:center,即可实现行内元素水平居中.</span>
+  <p> 若是块级元素, 该元素设置 margin:0 auto即可. </p>
+</div>
+<div class="container2">
+  <p>若子元素包含 float:left 属性, 为了让子元素水平居中, 则可让父元素宽度设置为fit-content,并且配合margin</p>
+</div>
+
+<div class="container3">
+  <p>使用flex 2012年版本布局</p>
+  <p>可以轻松的实现水平居中</p>
+</div>
+<div class="container4">
+  <p>使用CSS3中新增的transform属性, 子元素设置如下</p>
+</div>
+<div class="container5">
+  <p>使用绝对定位方式, 以及负值的margin-left, 子元素设置如下</p>
+</div>
+<div class="container6">
+  <p> 使用绝对定位方式, 以及left:0;right:0;margin:0 auto; 子元素设置如下</p>
+</div>
+</body>
+
+</html>

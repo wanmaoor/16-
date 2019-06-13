@@ -1,0 +1,59 @@
+.container1 {
+  text-align: center;
+  border: 1px red solid;
+}
+
+.container1 p {
+  margin: 0 auto;
+}
+
+.container2 {
+  width: fit-content;
+  /*width: -webkit-fit-content;*/
+  width: -moz-fit-content;
+  margin: 0 auto;
+}
+
+.container2 p {
+  /* float: left; 这个属性太烦人, 会影响后面的元素的排布, 建议将它扫入历史垃圾堆*/
+  border: 1px red solid;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  border: 1px red solid;
+}
+
+.container4 {
+  margin-top: 2%;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  border: 1px red solid;
+  transform: translate(-50%, 0);
+  /* left border 距离左边屏幕50%远, 然后向左平移自身的50%长度 */
+}
+
+.container5 {
+  margin-top: 8%;
+  text-align: center;
+  position: absolute;
+  border: 1px red solid;
+  width: 500px;
+  left: 50%;
+  top: 35%;
+  margin-left: -250px;
+  /* 是宽度的一半 */
+}
+
+.container6 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 65%;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px red solid;
+}
